@@ -16,5 +16,12 @@ public class Main {
         list.deleteFirst();
 
         list.printList();
+
+        System.out.println(list.deleteLast());
+        list.printList();
+
+        System.out.println(list.delete(1));
+        list.printList();
+
     }
 }

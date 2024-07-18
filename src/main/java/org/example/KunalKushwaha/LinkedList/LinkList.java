@@ -67,6 +67,54 @@ public class LinkList {
         return value;
     }
 
+    public int deleteLast(){
+        if(size <= 1){
+            return deleteFirst();
+        }
+
+        Node secondLast = get(size - 2);
+        int value = tail.value;
+        tail = secondLast;
+        tail.next = null;
+
+        return value;
+    }
+
+    public int delete(int index){
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size - 1){
+            return deleteLast();
+        }
+
+        Node prev = get(index - 1);
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+
+        return val;
+    }
+
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+
+        return null;
+    }
+
+    public Node get(int index){
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+        }
+        return node;
+    }
+
     public void printList(){
         Node temp = head;
 
