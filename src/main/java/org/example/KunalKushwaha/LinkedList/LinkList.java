@@ -115,7 +115,7 @@ public class LinkList {
         return node;
     }
 
-    public void printList(){
+    public void display(){
         Node temp = head;
 
         while(temp != null){
@@ -125,7 +125,7 @@ public class LinkList {
         System.out.println("END");
     }
 
-    class Node{
+    public class Node{
         int value;
         Node next;
 
