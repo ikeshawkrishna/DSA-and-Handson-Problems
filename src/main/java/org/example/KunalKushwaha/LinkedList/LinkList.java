@@ -115,6 +115,23 @@ public class LinkList {
         return node;
     }
 
+    public void reverse(){
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
+
+        while (present != null){
+            present.next = prev;
+            prev = present;
+            present = next;
+            if(next != null){
+                next = next.next;
+            }
+        }
+        head = prev;
+        display();
+    }
+
     public void display(){
         Node temp = head;
 
@@ -125,7 +142,7 @@ public class LinkList {
         System.out.println("END");
     }
 
-    public class Node{
+    public static class Node{
         int value;
         Node next;
 

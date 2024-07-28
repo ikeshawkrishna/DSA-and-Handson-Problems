@@ -38,20 +38,32 @@ public class Main {
 //        doubleLL.display();
 //        doubleLL.displayReverse();
 
-        CircularLinkedList cll = new CircularLinkedList();
-        cll.insertFirst(2);
-        cll.insertFirst(3);
-        cll.insertFirst(12);
-        cll.insertFirst(5);
-        cll.insertFirst(8);
-        cll.display();
+//        CircularLinkedList cll = new CircularLinkedList();
+//        cll.insertFirst(2);
+//        cll.insertFirst(3);
+//        cll.insertFirst(12);
+//        cll.insertFirst(5);
+//        cll.insertFirst(8);
+//        cll.display();
+//
+//
+//        cll.delete(12);
+//        cll.display();
+//
+//        cll.delete(8);
+//        cll.display();
 
 
-        cll.delete(12);
-        cll.display();
+        InterviewQuestions ll = new InterviewQuestions();
+//        ll.insertAtFirst(7);
+//        ll.insertAtFirst(6);
+//        ll.insertAtFirst(5);
+        ll.insertAtFirst(4);
+        ll.insertAtFirst(3);
+        ll.insertAtFirst(2);
+        ll.insertAtFirst(1);
 
-        cll.delete(8);
-        cll.display();
+        ll.reorderList(ll.getHead());
 
     }
 }
