@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DSA:jar">
+    <output-path>$PROJECT_DIR$/dist/DSA_jar</output-path>
+    <root id="archive" name="DSA.jar">
+      <element id="module-output" name="DSA" />
+    </root>
+  </artifact>
+</component>

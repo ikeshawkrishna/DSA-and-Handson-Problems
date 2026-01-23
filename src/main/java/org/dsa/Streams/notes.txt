@@ -1,0 +1,38 @@
+Ways to create the stream : 
+	1. Snames.stream();
+	2. Arrays.stream(lang);
+	3. Stream.of(1,2,3,4,5);
+	4. Stream.generate(Math::random).limit(5);
+	
+Intermediate Operations : 
+	1. Filter : --> takes predicate as input and filters the values based on the predicate.
+	
+	2. Map : --> takes Function as input, performs the transform operation and return the value.
+	
+	3. Sorted : 
+		--> No args method : Sort the values
+		--> Takes Comparator Interface as argument and sort the element 
+		
+	4. Reduce : 
+		--> Takes (initial, binary operator) as args and returns a value of type.
+		--> Takes (binary operator) as arg and returns a optional value of type.
+		
+	5. mapToInt : --> to convert Integer wrapper object to primitive int type and return IntStream
+	6. mapToDouble :: --> to convert double wrapper object to primitive double type and return DoubleStream
+	
+Terminal Operations :
+	1. Findfirst : --> finds the first element in the list
+	2. max, sum, average, min --> can be used with primitive int.
+	3. allMatch : --> takes predicate as arg and return true if all elements returns true by predicate
+	4. anyMatch : --> takes predicate as arg and return true if any elements returns true by predicate
+	5. Collectors.joining : --> Concatinate the string using the delimmter given
+	6. Collectors.partitioningBy : --> takes predicate as arg and partition the element as true/false based on predicate condition
+	7. Collectors.groupingBy : 
+		--> takes Function as arg and group the element based on it
+		--> takes function(key) and collector(value) as args
+		--> take function, downstream, collector as arg
+	8. Collectors.maxBy:--> take comparator Interface as arg and return the value (can be replaceble of max())
+	9. Collectors.averagingDouble--> take function as arg and return average value
+	10. Collectors.counting--> return occurance of the element
+	
+	
